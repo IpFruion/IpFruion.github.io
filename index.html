@@ -1,1 +1,130 @@
-Hello World
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>            
+        </style>
+        <title>Derrick Lockwood</title>
+        <link rel="stylesheet" href="css/mainLayout.css" title="browser" browser="true"/>
+        <link rel="alt stylesheet" href="css/mobiLayout.css" title="mobile" disabled="true" />
+        <link rel="icon" type="image/png" href="resources/pics/IpFruion.png">
+        
+        <script type="text/javascript" src ="js/mainProgram.js"></script>
+        <script src="/js/libs/jquery.stellar.min.js"></script>
+        <script src="/js/libs/jquery.stellar.js"></script>
+        <script>
+            $(function() {
+                $.stellar({
+                    horizontalScrolling: false,
+                    verticalOffset: 40
+                    
+                });
+            });
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="mainPhoto" data-stellar-background-ratio="2">
+            <h1 class="mainTitle">Derrick Lockwood</h1>
+            <h2 class="workInProgress">WORK IN PROGRESS</h2>
+        </div>
+        <div>
+            <ul id="tabs">
+                <li id="mainTab" onclick="changePage('main')">Main</li>
+                <li id="portfolioTab" onclick="changePage('portfolio')">Portfolio</li>
+                <li id="aboutTab" onclick="changePage('about')">About</li>
+                <li id="documentsTab" onclick="changePage('documents')">Documents</li>
+            </ul>
+        </div>
+        <div id="tabsContent">
+            <div id="main" class="unselectedContent">
+                <h2>Welcome</h2>
+                <p>This is my portfolio website. It includes links to download some of my projects and an about page.</p>
+                <p>It is still a work in progress so forgive the bugs and etc...</p>
+                <p>If this was not the android you are looking for please feel free to browse other websites and come right back.</p>
+            </div>
+            <div id="portfolio" class="unselectedContent">
+                <h2>Project Pink Fox</h2>
+                <div class="versionText">IN DEVELOPMENT </div>
+                <p>Description: I am teaming together with Scott Fisk and programming a school wide Trivia online game to use at EHS.</p>
+                <a class="downloader" href="http://scottfisk.org/projects/pinkfox/">Information Website</a>
+                
+                <h2>Blue Twilight Robot 2012</h2>
+                <div class="versionText">Unstable Version: 1.0.0 (release)</div>
+                <p>Description: This is Team's 2220 FRC Robot src code for the challenge of 2012</p>
+                <a class="downloader" href="resources/portfolioProjects/BlueTwilightRobot2012.zip">Download Version 1.0.0 Src</a>
+
+                <h2>Blue Twilight Robot 2013</h2>
+                <div class="versionText">Latest Stable Version: 1.0.0 (release)</div>
+                <p>Description: This is Team's 2220 FRC Robot src code for the challenge of 2013</p>
+                <a class="downloader" href="resources/portfolioProjects/BlueTwilightRobot2013.zip">Download Version 1.0.0 Src</a>
+                
+                <h2>Blue Twilight Robot 2014</h2>
+                <div class="versionText">Latest Stable Version: 1.1.6 (release)</div>
+                <p>Description: This is Team's 2220 FRC Robot src code for the challenge of 2014. This project is continuing in development
+                </p>
+                <a class="downloader" href="resources/portfolioProjects/Robot2014V1-1-6.zip">Download Version 1.1.6 Src</a>
+                <p></p>
+                <div class="portfolioPhoto" data-stellar-background-ratio="2"></div>
+                
+                <h2>Punnet Square Calculator </h2>
+                <div class="versionText">Latest Stable Version: 1.0.0 (release)</div>
+                <p>Description: This program does DNA calculations for the punnet square. It currently runs off of the console input.
+                I plan later to port it over to a program with a graphical interface
+                </p>
+                <a class="downloader" href="resources/portfolioProjects/Punnettsquarecalc.zip">Download Version 1.0.0 Src</a>
+                <p></p>
+                
+                
+            </div>
+            <div id="about" class="unselectedContent">
+            	<img src = "resources/pics/myPhoto.png" width="18%" height="18%"/>
+                <p>Hello my name is Derrick Lockwood. I am currently a student at Iowa State University.</p>
+                <p>I have been a software developer for 5 years. I started my programming adventure in kshell and bash.
+                    Then in freshman year at my high school, I saw a cocurricular activity called FIRST robotics.
+                    I then proceeded to join the Eagan Robotics Team. Our team name is Blue Twilight and our team number is
+                    2220. The first year I joined Eagan Robotics I knew I wanted to go into the programming sub-team to program the 
+                    software that is on the robot. The first year in robotics was a difficult one. I was just getting used to 
+                    the high school environment and none of the programming leads "taught" me how Java (one of the programming languages
+                    FIRST uses as software on the robot) works and what functionality it had on the robot. The first year I was partnered
+                    with a Senor and we worked on a mini deployable robot from the main one. I can say with all honesty that I didn't learn
+                    much my freshman year in robotics but it was fun to got to the competitions. :) 
+                </p>
+                <p>
+                    My Sophomore year was much better, I learned Java (object orientated programming language) and practiced it all that year even when the robotics season ended.
+                    Being in robotics that year was also difficult because I wanted to take a class called AP Computer Science. This class 
+                    taught students a basic level of programming but more importantly how good coding and designing works. Though to take
+                    this class you needed to have taken algebra two which I had not my Sophomore year, so I doubled up on math and took geometry
+                    and algebra two in the same year. What a pain... When I finally reached AP Computer Science I was prepared to ace this
+                    class. In this class having that extra experience with Java helped me to always be a couple of steps ahead of the class.
+                    I usually know how each project worked and each concept worked before the units start. Though I can't say I didn't learn
+                    anything because actually I learned quite a bit. I learned how to design the answer to the problem before coding it, 
+                    I learned some cool "tricks of the trade" with Java. All in all I think that class excelled my compassion for software 
+                    development.
+                </p>
+                <p>
+                    My Junior year was one of my favorite in terms of software development. I was in my 3rd year of robotics and I became
+                    a programming sub-team lead. It was fun and educating to lead a group of students towards a goal of building software
+                    for that year's robot. I think that in that year I learned even more quarks of programming in Java and how to structure 
+                    group coding. A challenge that was brought to me that year was getting kids who didn't know how to program in Java to
+                    join in and learn. I think that the way we did it that year didn't work.
+                </p>
+                <p>
+                    I then come to my final year in robotics, my Senior year. It was a blast to work with all the great students at Eagan High School.
+                    I grew into a leader of a programming team. In the end my strategy for getting programmers to work conducively with one another 
+                    worked out. It built me up as a leader and I continue to work on better ways to improve my collaborative ability.
+                    
+                </p>
+            </div>
+            <div id="documents" class="unselectedContent">
+            	
+            </div>
+        </div>
+    </body>
+</html>
