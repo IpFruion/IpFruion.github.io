@@ -122,18 +122,20 @@ and open the template in the editor.
               <h2>Resume</h2>
             </div>
           </div>
-          <!-- <script>
-            $("#menutabs a").click(function(e) {
-              e.preventDefault();
-              $(this).tab("show");
+          <script>
+          $(document).ready(function() {
+            if (location.hash) {
+                $("a[href='" + location.hash + "']").tab("show");
+            }
+            $(document.body).on("click", "a[data-toggle]", function(event) {
+                location.hash = this.getAttribute("href");
             });
-            $("ul.navbar-nav > li > a").on('shown.bs.tab', (e) => {
-              var id = $(e.target).attr("href").substr(1);
-              window.location.hash = id;
-            });
-            var hash = window.location.hash;
-            $('#menutabs a[href="' + hash + '"]').tab('show');
-          </script> -->
+          });
+          $(window).on("popstate", function() {
+              var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
+              $("a[href='" + anchor + "']").tab("show");
+          });
+          </script>
         </div>
     </body>
 </html>
