@@ -66,11 +66,12 @@ body {
 .mainPhoto
 {
     background-repeat: no-repeat;
+    background-position: 0px -150px;
     height: 400px;
     background-attachment: fixed;
     position: relative;
     background-image: url(../resources/pics/background.jpg);
-    background-size: 100% 75%;
+    background-size: 100% 100%;
     border-style: solid;
 }
 .navbar-nav
