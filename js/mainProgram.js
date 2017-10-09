@@ -1,4 +1,4 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -19,16 +19,16 @@ else
 }
 window.onload = function()
 {
-	if (getCookie(tabName) === "")
-	{
-	    print("No Cookie Found starting One with Id: " + prevId);
-	    setCookie(tabName, prevId, tabExpires);
-	}
-	setupTabs();
-	
-    if (window.addEventListener) {
-    	window.addEventListener("keydown",keyChange);
-    }
+	// if (getCookie(tabName) === "")
+	// {
+	//     print("No Cookie Found starting One with Id: " + prevId);
+	//     setCookie(tabName, prevId, tabExpires);
+	// }
+	// setupTabs();
+
+  if (window.addEventListener) {
+      window.addEventListener("keydown",keyChange);
+  }
 };
 function keyChange(event) {
 	switch(event.keyCode) {
@@ -54,37 +54,6 @@ function setupTabs()
 {
     prevId = getCookie(tabName);
 
-    var childTabs = document.getElementById('tabs').childNodes;
-    var childContent = document.getElementById('tabsContent').childNodes;
-    for (var i = 0; i < childTabs.length; i++)
-    {
-        if (childTabs[i].id !== undefined && childTabs[i].id !== null)
-        {
-
-            if (childTabs[i].id === prevId + 'Tab')
-            {
-                childTabs[i].className = "selectedTab";
-            }
-            else
-            {
-                childTabs[i].className = "unselectedTab";
-            }
-        }
-    }
-    for (var i = 0; i < childContent.length; i++)
-    {
-        if (childContent[i].id !== undefined && childContent[i].id !== null)
-        {
-            if (childContent[i].id === prevId)
-            {
-                childContent[i].className = "selectedContent";
-            }
-            else
-            {
-                childContent[i].className = "unselectedContent";
-            }
-        }
-    }
 }
 function setCookie(cname, cvalue, exdays)
 {
@@ -147,7 +116,6 @@ function switchCss(sheet)
                 tag[i].disabled = true;
             }
         }
-        //print(tag[i].title+":"+sheet+" dis:"+tag[i].disabled);
     }
 }
 function detectMobile()
@@ -162,4 +130,3 @@ function detectMobile()
             return false;
     }
 }
-

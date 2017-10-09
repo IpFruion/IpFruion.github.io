@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Feb 25, 2014, 2:51:57 PM
     Author     : Dlock
 */
@@ -14,7 +14,7 @@ body {
 @font-face
 {
     font-family: title;
-    src: url(../resources/fonts/technoFont.TTF);
+    src: url(../resources/fonts/franklingothic.TTF);
 }
 @font-face
 {
@@ -23,33 +23,33 @@ body {
 }
 @keyframes title
 {
-    0% {color: #eaeaea;
-        text-shadow: 0px 0px 5px #9AC4F5;}
+    0% {color: black;}
     50% {color: #2F35F5;}
-    100% {color: black;
-          text-shadow: 10px 10px 5px #9AC4F5;}
+    100% {color: white;}
 }
 @-webkit-keyframes title
 {
-    0% {color: #eaeaea;
-        text-shadow: 0px 0px 5px #9AC4F5;}
+    0% {color: black;}
     50% {color: #2F35F5;}
-    100% {color: black;
-          text-shadow: 10px 10px 5px #9AC4F5;}
+    100% {color: white;}
+}
+.layer
+{
+  background-color: rgba(31, 40, 51, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .mainTitle
 {
     text-align: center;
-    text-shadow: 10px 10px 5px #9AC4F5;
     font-family: title;
     font-weight: bold;
     font-stretch: ultra-expanded;
     font-size: 75px;
-    background: #eaeaea;
-    border-radius: 50px;
-    border-style: solid;
-    animation: title 6s linear;
-    -webkit-animation: title 6s linear;
+    color: #66FCF1;
+    /*animation: title 6s linear;
+    -webkit-animation: title 6s linear;*/
 }
 .versionText
 {
@@ -59,25 +59,37 @@ body {
 {
     text-align: center;
     font-family: title;
-    color: #E6B01C;
+    color: #C5C6C7;
     font-weight: bold;
     font-size: 30px;
-    border-radius: 70px;
-    border-style: solid;
-    background: #eaeaea;
 }
 .mainPhoto
-{   
-    background-position: 50% 0;
+{
     background-repeat: no-repeat;
-    background-position-y: -300px;
-    padding: 10px;
-    height: 300px;
+    height: 400px;
     background-attachment: fixed;
     position: relative;
-    background-image: url(../resources/pics/IpFruion.png);
+    background-image: url(../resources/pics/background.jpg);
+    background-size: 100% 75%;
     border-style: solid;
-    border-radius: 50px;
+}
+.navbar-nav
+{
+  width: 100%;
+}
+.navbar-nav > li > a{
+  border: medium none;
+  color: #1F2833;
+}
+.navbar-nav > .active > a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+  color:#fff;
+  background-color:#1F2833;
+}
+.navbar-nav > li > a:hover{
+  background-color: #45A29E !important;
+  border: medium none;
+  border-radius: 0;
+  color:#fff;
 }
 .portfolioPhoto
 {
@@ -92,34 +104,6 @@ body {
     border-style: solid;
     border-radius: 50px;
 }
-.selectedTab
-{
-    background-color: #D9B2B2;
-    border-top: 4px solid #4B6AF2;
-}
-.unselectedTab
-{
-    background-color: #eaeaea;
-    border-top: 4px solid #eaeaea;
-}
-.selectedContent
-{
-    display: block;
-    border-radius: 5px;
-    padding: 10px;
-    border-style: solid;
-    border-color: #000;
-    text-wrap: normal;
-}
-.unselectedContent
-{
-    display: none;
-    border-radius: 5px;
-    padding: 10px;
-    border-style: solid;
-    border-color: #000;
-    text-wrap: normal;
-}
 #cookieReset
 {
     text-align: right;
@@ -132,54 +116,4 @@ body {
     background: -o-linear-gradient(#eaeaea, #4BF251); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#eaeaea, #4BF251); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#eaeaea, #4BF251);
-}
-#tabs
-{
-    float: none;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    -webkit-transform: translate(-50px);
-    transform: translate(-50px);
-}
-#tabs li
-{
-    display: inline-block;
-    padding: 5px 10px;
-    font-family: tabs;
-    font-weight: bold;
-    color: #1636B8;
-
-    border-radius: 5px;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
-}
-.downloader
-{
-    border-radius: 2px;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-    padding: 10px;
-    background: -webkit-linear-gradient(#eaeaea, #4BF251); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#eaeaea, #4BF251); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#eaeaea, #4BF251); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#eaeaea, #4BF251);
-
-}
-#mainTab:hover
-{
-    border-top-color: #088C13; 
-}
-#portfolioTab:hover
-{
-    border-top-color: #A468F2;
-}
-#aboutTab:hover
-{
-    border-top-color: #CF3037;
-}
-#documentsTab:hover
-{
-    border-top-color: #EDBB15;
 }

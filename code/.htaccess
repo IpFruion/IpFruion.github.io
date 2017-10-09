@@ -1,7 +1,0 @@
-# Begin password protection #
-AuthName "Access Denied"
-Require valid-user
-AuthUserFile "/home/users/web/b519/ipg.derricklockwoodcom/code/.htpasswd"
-AuthType basic
-# End password protection #
-
