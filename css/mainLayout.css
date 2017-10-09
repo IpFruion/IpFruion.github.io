@@ -21,18 +21,6 @@ body {
     font-family: tabs;
     src: url(../resources/fonts/fippsRegular.otf);
 }
-@keyframes title
-{
-    0% {color: black;}
-    50% {color: #2F35F5;}
-    100% {color: white;}
-}
-@-webkit-keyframes title
-{
-    0% {color: black;}
-    50% {color: #2F35F5;}
-    100% {color: white;}
-}
 .layer
 {
   background-color: rgba(31, 40, 51, 0.5);
