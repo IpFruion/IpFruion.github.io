@@ -8,9 +8,6 @@ and open the template in the editor.
     Author     : Dlock
 */
 
-body {
-    background-color: #e0e1e2;
-}
 @font-face
 {
     font-family: title;
@@ -21,13 +18,6 @@ body {
     font-family: tabs;
     src: url(../resources/fonts/fippsRegular.otf);
 }
-.layer
-{
-  background-color: rgba(31, 40, 51, 0.5);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
 .mainTitle
 {
     text-align: center;
@@ -36,6 +26,8 @@ body {
     font-stretch: ultra-expanded;
     font-size: 75px;
     color: #66FCF1;
+    position: relative;
+    margin-top: 50px;
 }
 .workInProgress
 {
@@ -52,13 +44,20 @@ body {
 .mainPhoto
 {
     background-repeat: no-repeat;
-    background-position: 0px -150px;
+    background-position: 0px -275px;
     width: 100%;
     height: 400px;
     background-attachment: fixed;
     position: relative;
     background-image: url(../resources/pics/background.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+}
+.layer
+{
+  background-color: rgba(31, 40, 51, 0.5);
+  width: inherit;
+  height: inherit;
+  position: absolute;
 }
 .navbar-nav
 {
