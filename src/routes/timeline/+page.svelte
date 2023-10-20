@@ -21,8 +21,8 @@
 	const getStepColor = (index: number) => (index === 0 ? 'step-primary' : '');
 </script>
 
-<div class="flex justify-center items-stretch w-screen">
-	<ul class="steps steps-vertical w-1/3">
+<div class="flex justify-center">
+	<ul class="steps steps-vertical">
 		{#each content as c, i}
 			<li class="step {getStepColor(i)}" data-content="">
 				<div class="m-6 card bg-neutral text-neutral-content shadow-xl">

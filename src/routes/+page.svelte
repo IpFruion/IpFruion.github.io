@@ -25,9 +25,9 @@
 				<img class="w-48 h-48 mask mask-circle" src="media/pics/profile.jpeg" alt="profile" />
 				<div class="item-body font-normal text-2xl px-3">
 					<p>
-						My name is Derrick Lockwood and this is my website about the passion I have for software
-						development. It includes a simple biography, a timeline of my career, language
-						expertise, and some other information.
+						My name is Derrick Lockwood and this is my portfolio website about the passion I have
+						for software engineering. It includes a simple biography, a timeline of my career,
+						language expertise, and some projects I have participated in throughout my life.
 					</p>
 					<br />
 					<p>
@@ -36,6 +36,12 @@
 						University (ISU). I continue to persue my passion by working on personal projects that I
 						find interesting. I like creating software others use and can take pride in the work
 						that I develop.
+					</p>
+					<br />
+					<p>
+						I am currently working at a full-time position as a senior software engineer in the
+						e-commerce space. This involves creating checkout and order related backend REST apis in
+						Golang, TS, and Rust.
 					</p>
 					<br />
 					<span>

@@ -29,12 +29,11 @@
 	];
 </script>
 
-<div class="m-4 grid grid-cols-1 gap-4">
+<div class="grow flex flex-col justify-around space-y-4 items-stretch">
 	{#each languages as language}
-		<!-- "grid grid-cols-1 grid-rows-2 justify-items-center w-full" -->
-		<div class="flex flex-row justify-center w-full">
-			<h1>{language.language}</h1>
-			<Expertise step={language.expertise} />
+		<div class="flex flex-row items-center space-x-4 justify-center">
+			<h1 class="text-xl">{language.language}</h1>
+			<Expertise value={language.expertise} />
 		</div>
 	{/each}
 </div>
