@@ -21,35 +21,37 @@
 					</h1>
 				{/if}
 			</div>
-			<div class="content flex py-10">
-				<img class="w-48 h-48 mask mask-circle" src="media/pics/profile.jpeg" alt="profile" />
-				<div class="item-body font-normal text-2xl px-3">
-					<p>
-						My name is Derrick Lockwood and this is my portfolio website about the passion I have
-						for software engineering. It includes a simple biography, a timeline of my career,
-						language expertise, and some projects I have participated in throughout my life.
-					</p>
-					<br />
-					<p>
-						I am an avid Software Developer that has many years of programming and development
-						experience. I have a Bachelors of Science in Software Engineering from Iowa State
-						University (ISU). I continue to persue my passion by working on personal projects that I
-						find interesting. I like creating software others use and can take pride in the work
-						that I develop.
-					</p>
-					<br />
-					<p>
-						I am currently working at a full-time position as a senior software engineer in the
-						e-commerce space. This involves creating checkout and order related backend REST apis in
-						Golang, TS, and Rust.
-					</p>
-					<br />
-					<span>
-						For more information see the <a class="text-primary" href="/timeline">Timeline</a>
-						page
-					</span>
+			<section>
+				<div class="content flex py-10">
+					<img class="w-48 h-48 mask mask-circle" src="media/pics/profile.jpeg" alt="profile" />
+					<div class="item-body font-normal text-2xl px-3">
+						<p>
+							My name is Derrick Lockwood and this is my portfolio website about the passion I have
+							for software engineering. It includes a simple biography, a timeline of my career,
+							language expertise, and some projects I have participated in throughout my life.
+						</p>
+						<br />
+						<p>
+							I am an avid Software Developer that has many years of programming and development
+							experience. I have a Bachelors of Science in Software Engineering from Iowa State
+							University (ISU). I continue to persue my passion by working on personal projects that
+							I find interesting. I like creating software others use and can take pride in the work
+							that I develop.
+						</p>
+						<br />
+						<p>
+							I am currently working at a full-time position as a senior software engineer in the
+							e-commerce space. This involves creating checkout and order related backend REST apis
+							in Golang, TS, and Rust.
+						</p>
+						<br />
+						<span>
+							For more information see the <a class="text-primary" href="/timeline">Timeline</a>
+							page
+						</span>
+					</div>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </div>
