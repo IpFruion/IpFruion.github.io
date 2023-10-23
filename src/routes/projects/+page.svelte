@@ -1,4 +1,4 @@
-<article class="prose md:prose-lg lg:prose-xl prose-a:text-blue-300">
+<article class="m-3 prose md:prose-lg lg:prose-xl prose-a:text-blue-300">
 	<h1>Personal</h1>
 	<p>
 		For personal projects I would recommend checking out my <a href="https://github.com/IpFruion"
