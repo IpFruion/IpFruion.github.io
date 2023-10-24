@@ -15,27 +15,30 @@
 	setContext('mode', mode);
 </script>
 
-<!-- position: fixed; top: 0px; width: 100%; overflow: hidden -->
-<div class="sticky top-0 z-50">
-	<div class="m-3">
-		<div class="alert alert-info">
-			<Info />
-			<span>Work in Progress</span>
+<header>
+	<div class="sticky top-0 z-50">
+		<div class="m-3">
+			<div class="alert alert-info">
+				<Info />
+				<span>Work in Progress</span>
+			</div>
+		</div>
+		<div class="flex justify-center m-3">
+			<div class="tabs tabs-boxed items-center">
+				<Tab href="/">Home</Tab>
+				<Tab href="/timeline">Timeline</Tab>
+				<Tab href="/languages">Languages</Tab>
+				<Tab href="/projects">Projects</Tab>
+				<Tab href="https://github.com/IpFruion"><Github /></Tab>
+				<Tab href="media/derrick_lockwood_resume.pdf" download="derrick_lockwood_resume"
+					><Resume /></Tab
+				>
+			</div>
 		</div>
 	</div>
-	<div class="flex justify-center m-3">
-		<div class="tabs tabs-boxed items-center">
-			<Tab href="/">Home</Tab>
-			<Tab href="/timeline">Timeline</Tab>
-			<Tab href="/languages">Languages</Tab>
-			<Tab href="/projects">Projects</Tab>
-			<Tab href="https://github.com/IpFruion"><Github /></Tab>
-			<Tab href="media/derrick_lockwood_resume.pdf" download="derrick_lockwood_resume"
-				><Resume /></Tab
-			>
-		</div>
+</header>
+<main>
+	<div class="flex justify-center m-3 pt-3">
+		<slot />
 	</div>
-</div>
-<div class="flex justify-center m-3 pt-3">
-	<slot />
-</div>
+</main>
