@@ -37,7 +37,7 @@
 						<p>
 							I am an avid Software Developer that has many years of programming and development
 							experience. I have a Bachelors of Science in Software Engineering from Iowa State
-							University (ISU). I continue to persue my passion by working on personal projects that
+							University (ISU). I continue to pursue my passion by working on personal projects that
 							I find interesting. I like creating software others use and can take pride in the work
 							that I develop.
 						</p>
